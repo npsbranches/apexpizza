@@ -276,33 +276,38 @@ textarea {
 .pizza {
     display: flex;
     flex-wrap: wrap;
-    padding: 50px 0;justify-content: center;
+    padding: 50px 0;
+    justify-content: center;
 }
+
 .pizza-card {
     width: 290px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin: 30px 0;
 }
 
 .pizza-img {
     height: 220px;
 }
-.pizza-img img{
+
+.pizza-img img {
     height: 100%;
     object-fit: contain;
 }
 
-input[type=radio] {
+.radio-group input[type=radio] {
     position: absolute;
     visibility: hidden;
     display: none;
     border-top: solid 2px transparent;
     border-bottom: solid 2px transparent;
-  }
-  
-  label {
+    cursor: pointer;
+}
+
+.radio-group label {
     color: #a4a39d;
     display: inline-block;
     cursor: pointer;
@@ -313,27 +318,33 @@ input[type=radio] {
     width: 100%;
     font-size: 12px;
     text-align: center;
-background: #e6e6e6;
-  }
-  
-  input[type=radio]:checked + label {
+    background: #e6e6e6;
+    cursor: pointer;
+}
+
+.radio-group input[type=radio]:checked+label {
     color: #000;
     outline: solid 2px #a4a39d;
     border-top: solid 2px transparent;
     border-bottom: solid 2px transparent;
     background: #fff;
-  }
-  input[type=radio]:checked + label:not(:last-child) {
+}
+
+.radio-group input[type=radio]:checked+label:not(:last-child) {
     margin-right: 2px;
-  }
-  
-  label + input[type=radio] + label {
+}
+
+.radio-group input[type=radio]:checked+label:last-child {
+    margin-right: -2px;
+}
+
+.radio-group label+input[type=radio]+label {
     /* border-left: solid 3px #675f6b; */
     border-top: solid 2px #a4a39d;
     border-bottom: solid 2px #a4a39d;
-  }
-  
-  .radio-group {
+}
+
+.radio-group {
     border-left: solid 2px #a4a39d;
     border-right: solid 2px #a4a39d;
     display: flex;
@@ -341,21 +352,21 @@ background: #e6e6e6;
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 2px;
-  
-  }
 
-  .pizza-details {
+}
+
+.pizza-details {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     text-align: center;
     height: 100%;
-  }
-  
-  .pizza-size .radio-group {
+}
+
+.pizza-size .radio-group {
     width: 200px;
-  }
+}
 
 
 .pizza-pastry .radio-group {
@@ -390,6 +401,7 @@ background: #e6e6e6;
     align-items: center;
     justify-content: center;
 }
+
 .pizza-add-to-cart {
     font-size: 14px;
     color: #000;

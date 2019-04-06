@@ -13,19 +13,6 @@
     <link rel="stylesheet" href="css/fonts.css">
 </head>
 
-<script>
-
-var ImgArray = [
-  "images/pepperoni.png",
-  "images/cezar.png",
-  "images/margarita.png",
-];
-
-function ChangeImg(imgPtr) {
-  document.getElementById('CommonImg').src = ImgArray[imgPtr];
-//  document.getElementById('CommonImg').alt = ImgArray[imgPtr]; // optional comment
-}
-
 </script>
 
 <body>
@@ -48,16 +35,16 @@ function ChangeImg(imgPtr) {
         <div class="header-bottom">
             <nav class="header-menu">
                 <ul>
-                    <li><a href="">Пиццы</a></li>
-                    <li><a href="">Напитки</a></li>
-                    <li><a href="">Закуски</a></li>
-                    <li><a href="">Соусы</a></li>
-                    <li><a href="">Сеты</a></li>
-                    <li><a href="">Акции</a></li>
-                    <li><a href="">Вакансии</a></li>
-                    <li><a href="">Блог</a></li>
-                    <li><a href="">Контакты</a></li>
-                    <li><a href="">О нас</a></li>
+                    <li><a href="#">Пиццы</a></li>
+                    <li><a href="#">Напитки</a></li>
+                    <li><a href="#">Закуски</a></li>
+                    <li><a href="#">Соусы</a></li>
+                    <li><a href="#">Сеты</a></li>
+                    <li><a href="#">Акции</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">О нас</a></li>
                 </ul>
             </nav>
             <div class="header-bottom-right">
@@ -87,7 +74,7 @@ function ChangeImg(imgPtr) {
             <div class="pizza">
                 <div class="pizza-card">
                     <div class="pizza-img">
-                        <img id="CommonImg" src="images/margarita.png"> 
+                        <img id="CommonImg" src="images/pizza/margarita.png">
                     </div>
 
                     <div class="pizza-details">
@@ -102,21 +89,21 @@ function ChangeImg(imgPtr) {
                             <div class="pizza-size">
                                 <form>
                                     <div class="radio-group">
-                                        <input type="radio" id="margarita-35sm" name="selector" name="imgControl" value="0" onclick="ChangeImg(this.value)"> 
+                                        <input type="radio" id="margarita-35sm" name="selector">
                                         <label for="margarita-35sm">35см</label>
-                                        <input type="radio" id="margarita-30sm" name="selector" name="imgControl" value="1" onclick="ChangeImg(this.value)">
+                                        <input type="radio" id="margarita-30sm" name="selector">
                                         <label for="margarita-30sm">30см</label>
-                                        <input type="radio" id="margarita-25sm" name="selector" name="imgControl" value="2" onclick="ChangeImg(this.value)" checked>
+                                        <input type="radio" id="margarita-25sm" name="selector" checked>
                                         <label for="margarita-25sm">25см</label>
                                     </div>
                                 </form>
                             </div>
-                           
+
                             <div class="pizza-pastry">
                                 <form>
                                     <div class="radio-group">
                                         <input type="radio" id="margarita-thin" name="selector" value="0">
-                                        <label for="margarita-thin" >Тонкое</label>
+                                        <label for="margarita-thin">Тонкое</label>
                                         <input type="radio" id="margarita-traditional" name="selector" checked>
                                         <label for="margarita-traditional">Традиционное</label>
                                     </div>
@@ -133,7 +120,7 @@ function ChangeImg(imgPtr) {
 
                 <div class="pizza-card">
                     <div class="pizza-img">
-                        <img src="images/pepperoni.png" alt="">
+                        <img src="images/pizza/pepperoni.png" alt="">
                     </div>
 
                     <div class="pizza-details">
@@ -149,23 +136,22 @@ function ChangeImg(imgPtr) {
                             <div class="pizza-size">
                                 <form>
                                     <div class="radio-group">
-                                        <input type="radio" id="option-35sm" name="selector">
-                                        <label for="option-35sm">35см</label>
-                                        <input type="radio" id="option-30sm" name="selector">
-                                        <label for="option-30sm">30см</label>
-                                        <input type="radio" id="option-25sm" name="selector" checked>
-                                        <label for="option-25sm">25см</label>
+                                        <input type="radio" id="pepperoni-35sm" name="selector">
+                                        <label for="pepperoni-35sm">35см</label>
+                                        <input type="radio" id="pepperoni-30sm" name="selector">
+                                        <label for="pepperoni-30sm">30см</label>
+                                        <input type="radio" id="pepperoni-25sm" name="selector" checked>
+                                        <label for="pepperoni-25sm">25см</label>
                                     </div>
                                 </form>
                             </div>
                             <div class="pizza-pastry">
                                 <form>
                                     <div class="radio-group">
-                                        <input type="radio" id="option-thin" name="selector">
-                                        <label for="option-thin">Тонкое</label>
-                                        <input type="radio" id="option-traditional" name="selector" checked>
-                                        <label for="option-traditional">Традиционное</label>
-
+                                        <input type="radio" id="pepperoni-thin" name="selector">
+                                        <label for="pepperoni-thin">Тонкое</label>
+                                        <input type="radio" id="pepperoni-traditional" name="selector" checked>
+                                        <label for="pepperoni-traditional">Традиционное</label>
                                     </div>
                                 </form>
                             </div>
@@ -178,7 +164,7 @@ function ChangeImg(imgPtr) {
                 </div>
                 <div class="pizza-card">
                     <div class="pizza-img">
-                        <img src="images/julyen.png" alt="">
+                        <img src="images/pizza/julyen.png" alt="">
                     </div>
 
                     <div class="pizza-details">
@@ -194,22 +180,22 @@ function ChangeImg(imgPtr) {
                             <div class="pizza-size">
                                 <form>
                                     <div class="radio-group">
-                                        <input type="radio" id="option-35sm" name="selector">
-                                        <label for="option-35sm">35см</label>
-                                        <input type="radio" id="option-30sm" name="selector">
-                                        <label for="option-30sm">30см</label>
-                                        <input type="radio" id="option-25sm" name="selector" checked>
-                                        <label for="option-25sm">25см</label>
+                                        <input type="radio" id="julyen-35sm" name="selector">
+                                        <label for="julyen-35sm">35см</label>
+                                        <input type="radio" id="julyen-30sm" name="selector">
+                                        <label for="julyen-30sm">30см</label>
+                                        <input type="radio" id="julyen-25sm" name="selector" checked>
+                                        <label for="julyen-25sm">25см</label>
                                     </div>
                                 </form>
                             </div>
                             <div class="pizza-pastry">
                                 <form>
                                     <div class="radio-group">
-                                        <input type="radio" id="option-thin" name="selector">
-                                        <label for="option-thin">Тонкое</label>
-                                        <input type="radio" id="option-traditional" name="selector" checked>
-                                        <label for="option-traditional">Традиционное</label>
+                                        <input type="radio" id="julyen-thin" name="selector">
+                                        <label for="julyen-thin">Тонкое</label>
+                                        <input type="radio" id="julyen-traditional" name="selector" checked>
+                                        <label for="julyen-traditional">Традиционное</label>
 
                                     </div>
                                 </form>
@@ -223,7 +209,7 @@ function ChangeImg(imgPtr) {
                 </div>
                 <div class="pizza-card">
                     <div class="pizza-img">
-                        <img src="images/cezar.png" alt="">
+                        <img src="images/pizza/cezar.png" alt="">
                     </div>
 
                     <div class="pizza-details">
@@ -239,22 +225,22 @@ function ChangeImg(imgPtr) {
                             <div class="pizza-size">
                                 <form>
                                     <div class="radio-group">
-                                        <input type="radio" id="option-35sm" name="selector">
-                                        <label for="option-35sm">35см</label>
-                                        <input type="radio" id="option-30sm" name="selector">
-                                        <label for="option-30sm">30см</label>
-                                        <input type="radio" id="option-25sm" name="selector" checked>
-                                        <label for="option-25sm">25см</label>
+                                        <input type="radio" id="cezar-35sm" name="selector">
+                                        <label for="cezar-35sm">35см</label>
+                                        <input type="radio" id="cezar-30sm" name="selector">
+                                        <label for="cezar-30sm">30см</label>
+                                        <input type="radio" id="cezar-25sm" name="selector" checked>
+                                        <label for="cezar-25sm">25см</label>
                                     </div>
                                 </form>
                             </div>
                             <div class="pizza-pastry">
                                 <form>
                                     <div class="radio-group">
-                                        <input type="radio" id="option-thin" name="selector">
-                                        <label for="option-thin">Тонкое</label>
-                                        <input type="radio" id="option-traditional" name="selector" checked>
-                                        <label for="option-traditional">Традиционное</label>
+                                        <input type="radio" id="cezar-thin" name="selector">
+                                        <label for="cezar-thin">Тонкое</label>
+                                        <input type="radio" id="cezar-traditional" name="selector" checked>
+                                        <label for="cezar-traditional">Традиционное</label>
 
                                     </div>
                                 </form>
@@ -262,6 +248,359 @@ function ChangeImg(imgPtr) {
                             <div class="pizza-buy">
                                 <button class="pizza-add-to-cart">В корзину</button>
                                 <span class="pizza-price">37 000 сум</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pizza-card">
+                    <div class="pizza-img">
+                        <img src="images/pizza/fourcheese.png" alt="">
+                    </div>
+
+                    <div class="pizza-details">
+                        <div class="pizza-info">
+                            <h3 class="pizza-name">Пицца 4 сыра</h3>
+                            <p class="pizza-comp">
+                                Состав: Сыр Дор Блю, сыр
+                                Пармезан, сыр Гауда, сыр
+                                Моцарелла, соус
+                            </p>
+                        </div>
+                        <div>
+                            <div class="pizza-size">
+                                <form>
+                                    <div class="radio-group">
+                                        <input type="radio" id="fourcheese-35sm" name="selector">
+                                        <label for="fourcheese-35sm">35см</label>
+                                        <input type="radio" id="fourcheese-30sm" name="selector">
+                                        <label for="fourcheese-30sm">30см</label>
+                                        <input type="radio" id="fourcheese-25sm" name="selector" checked>
+                                        <label for="fourcheese-25sm">25см</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="pizza-pastry">
+                                <form>
+                                    <div class="radio-group">
+                                        <input type="radio" id="fourcheese-thin" name="selector">
+                                        <label for="fourcheese-thin">Тонкое</label>
+                                        <input type="radio" id="fourcheese-traditional" name="selector" checked>
+                                        <label for="fourcheese-traditional">Традиционное</label>
+
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="pizza-buy">
+                                <button class="pizza-add-to-cart">В корзину</button>
+                                <span class="pizza-price">35 000 сум</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pizza-card">
+                    <div class="pizza-img">
+                        <img src="images/pizza/hawaiian.png" alt="">
+                    </div>
+
+                    <div class="pizza-details">
+                        <div class="pizza-info">
+                            <h3 class="pizza-name">Пицца Гавайская</h3>
+                            <p class="pizza-comp">
+                                Состав: Цыпленок, томатный
+                                соус, сыр моцарелла, ананасы
+                            </p>
+                        </div>
+                        <div>
+                            <div class="pizza-size">
+                                <form>
+                                    <div class="radio-group">
+                                        <input type="radio" id="hawaiian-35sm" name="selector">
+                                        <label for="hawaiian-35sm">35см</label>
+                                        <input type="radio" id="hawaiian-30sm" name="selector">
+                                        <label for="hawaiian-30sm">30см</label>
+                                        <input type="radio" id="hawaiian-25sm" name="selector" checked>
+                                        <label for="hawaiian-25sm">25см</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="pizza-pastry">
+                                <form>
+                                    <div class="radio-group">
+                                        <input type="radio" id="hawaiian-thin" name="selector">
+                                        <label for="hawaiian-thin">Тонкое</label>
+                                        <input type="radio" id="hawaiian-traditional" name="selector" checked>
+                                        <label for="hawaiian-traditional">Традиционное</label>
+
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="pizza-buy">
+                                <button class="pizza-add-to-cart">В корзину</button>
+                                <span class="pizza-price">35 000 сум</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pizza-card">
+                    <div class="pizza-img">
+                        <img src="images/pizza/kebab.png" alt="">
+                    </div>
+
+                    <div class="pizza-details">
+                        <div class="pizza-info">
+                            <h3 class="pizza-name">Пицца Кебаб</h3>
+                            <p class="pizza-comp">
+                                Состав: Сыр, соус томатный,
+                                кебаб, томаты, лук красный,
+                                орегано, розмарин
+                            </p>
+                        </div>
+                        <div>
+                            <div class="pizza-size">
+                                <form>
+                                    <div class="radio-group">
+                                        <input type="radio" id="kebab-35sm" name="selector">
+                                        <label for="kebab-35sm">35см</label>
+                                        <input type="radio" id="kebab-30sm" name="selector">
+                                        <label for="kebab-30sm">30см</label>
+                                        <input type="radio" id="kebab-25sm" name="selector" checked>
+                                        <label for="kebab-25sm">25см</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="pizza-pastry">
+                                <form>
+                                    <div class="radio-group">
+                                        <input type="radio" id="kebab-thin" name="selector">
+                                        <label for="kebab-thin">Тонкое</label>
+                                        <input type="radio" id="kebab-traditional" name="selector" checked>
+                                        <label for="kebab-traditional">Традиционное</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="pizza-buy">
+                                <button class="pizza-add-to-cart">В корзину</button>
+                                <span class="pizza-price">41 000 сум</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pizza-card">
+                    <div class="pizza-img">
+                        <img src="images/pizza/meat.png" alt="">
+                    </div>
+
+                    <div class="pizza-details">
+                        <div class="pizza-info">
+                            <h3 class="pizza-name">Пицца Мясная</h3>
+                            <p class="pizza-comp">
+                                Состав: Cыр, соус томатный,
+                                виле цыпленка, телятина,
+                                пепперони
+                            </p>
+                        </div>
+                        <div>
+                            <div class="pizza-size">
+                                <form>
+                                    <div class="radio-group">
+                                        <input type="radio" id="meat-35sm" name="selector">
+                                        <label for="meat-35sm">35см</label>
+                                        <input type="radio" id="meat-30sm" name="selector">
+                                        <label for="meat-30sm">30см</label>
+                                        <input type="radio" id="meat-25sm" name="selector" checked>
+                                        <label for="meat-25sm">25см</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="pizza-pastry">
+                                <form>
+                                    <div class="radio-group">
+                                        <input type="radio" id="meat-thin" name="selector">
+                                        <label for="meat-thin">Тонкое</label>
+                                        <input type="radio" id="meat-traditional" name="selector" checked>
+                                        <label for="meat-traditional">Традиционное</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="pizza-buy">
+                                <button class="pizza-add-to-cart">В корзину</button>
+                                <span class="pizza-price">35 000 сум</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pizza-card">
+                    <div class="pizza-img">
+                        <img src="images/pizza/greek.png" alt="">
+                    </div>
+
+                    <div class="pizza-details">
+                        <div class="pizza-info">
+                            <h3 class="pizza-name">Пицца Греческая</h3>
+                            <p class="pizza-comp">
+                                Состав: Cыр, соус томатный, сыр
+                                фета, томаты, лук красный, оливки,
+                                перец болгарский, листья салата
+                            </p>
+                        </div>
+                        <div>
+                            <div class="pizza-size">
+                                <form>
+                                    <div class="radio-group">
+                                        <input type="radio" id="greek-35sm" name="selector">
+                                        <label for="greek-35sm">35см</label>
+                                        <input type="radio" id="greek-30sm" name="selector">
+                                        <label for="greek-30sm">30см</label>
+                                        <input type="radio" id="greek-25sm" name="selector" checked>
+                                        <label for="greek-25sm">25см</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="pizza-pastry">
+                                <form>
+                                    <div class="radio-group">
+                                        <input type="radio" id="greek-thin" name="selector">
+                                        <label for="greek-thin">Тонкое</label>
+                                        <input type="radio" id="greek-traditional" name="selector" checked>
+                                        <label for="greek-traditional">Традиционное</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="pizza-buy">
+                                <button class="pizza-add-to-cart">В корзину</button>
+                                <span class="pizza-price">35 000 сум</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pizza-card">
+                    <div class="pizza-img">
+                        <img src="images/pizza/barbecue.png" alt="">
+                    </div>
+
+                    <div class="pizza-details">
+                        <div class="pizza-info">
+                            <h3 class="pizza-name">Пицца Барбекю</h3>
+                            <p class="pizza-comp">
+                                Состав: Cыр, соус BBQ, куриное
+                                филе, лук, перец болгарский,
+                                соус Песто, петрушка
+                            </p>
+                        </div>
+                        <div>
+                            <div class="pizza-size">
+                                <form>
+                                    <div class="radio-group">
+                                        <input type="radio" id="barbecue-35sm" name="selector">
+                                        <label for="barbecue-35sm">35см</label>
+                                        <input type="radio" id="barbecue-30sm" name="selector">
+                                        <label for="barbecue-30sm">30см</label>
+                                        <input type="radio" id="barbecue-25sm" name="selector" checked>
+                                        <label for="barbecue-25sm">25см</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="pizza-pastry">
+                                <form>
+                                    <div class="radio-group">
+                                        <input type="radio" id="barbecue-thin" name="selector">
+                                        <label for="barbecue-thin">Тонкое</label>
+                                        <input type="radio" id="barbecue-traditional" name="selector" checked>
+                                        <label for="barbecue-traditional">Традиционное</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="pizza-buy">
+                                <button class="pizza-add-to-cart">В корзину</button>
+                                <span class="pizza-price">35 000 сум</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pizza-card">
+                    <div class="pizza-img">
+                        <img src="images/pizza/applepizza.png" alt="">
+                    </div>
+
+                    <div class="pizza-details">
+                        <div class="pizza-info">
+                            <h3 class="pizza-name">Пицца с яблоками</h3>
+                            <p class="pizza-comp">
+                                Состав: Сыр, белый соус, яблоки
+                                по итальянски, оливковое масло,
+                                грецкий орех
+                            </p>
+                        </div>
+                        <div>
+                            <div class="pizza-size">
+                                <form>
+                                    <div class="radio-group">
+                                        <input type="radio" id="applepizza-35sm" name="selector">
+                                        <label for="applepizza-35sm">35см</label>
+                                        <input type="radio" id="applepizza-30sm" name="selector">
+                                        <label for="applepizza-30sm">30см</label>
+                                        <input type="radio" id="applepizza-25sm" name="selector" checked>
+                                        <label for="applepizza-25sm">25см</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="pizza-pastry">
+                                <form>
+                                    <div class="radio-group">
+                                        <input type="radio" id="applepizza-thin" name="selector">
+                                        <label for="applepizza-thin">Тонкое</label>
+                                        <input type="radio" id="applepizza-traditional" name="selector" checked>
+                                        <label for="applepizza-traditional">Традиционное</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="pizza-buy">
+                                <button class="pizza-add-to-cart">В корзину</button>
+                                <span class="pizza-price">33 000 сум</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pizza-card">
+                    <div class="pizza-img">
+                        <img src="images/pizza/royal.png" alt="">
+                    </div>
+
+                    <div class="pizza-details">
+                        <div class="pizza-info">
+                            <h3 class="pizza-name">Пицца королевская</h3>
+                            <p class="pizza-comp">
+                                Состав: Обжаренные шампиньоны и
+                                мясо кебаб, сыр моцарелла. двума
+                                сортами лука и алый томат
+                            </p>
+                        </div>
+                        <div>
+                            <div class="pizza-size">
+                                <form>
+                                    <div class="radio-group">
+                                        <input type="radio" id="royal-35sm" name="selector">
+                                        <label for="royal-35sm">35см</label>
+                                        <input type="radio" id="royal-30sm" name="selector">
+                                        <label for="royal-30sm">30см</label>
+                                        <input type="radio" id="royal-25sm" name="selector" checked>
+                                        <label for="royal-25sm">25см</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="pizza-pastry">
+                                <form>
+                                    <div class="radio-group">
+                                        <input type="radio" id="royal-thin" name="selector">
+                                        <label for="royal-thin">Тонкое</label>
+                                        <input type="radio" id="royal-traditional" name="selector" checked>
+                                        <label for="royal-traditional">Традиционное</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="pizza-buy">
+                                <button class="pizza-add-to-cart">В корзину</button>
+                                <span class="pizza-price">55 000 сум</span>
                             </div>
                         </div>
                     </div>
