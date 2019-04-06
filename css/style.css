@@ -1,3 +1,8 @@
+/* 
+    @z-index:
+        @hero-slider - 1
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -41,6 +46,34 @@ textarea {
     padding: 0 15px;
     margin: auto;
 }
+
+.main-content {
+    height: 3000px;
+    position: relative;
+    z-index: 20;
+    background-color: #fff;
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+
+.section-title {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    padding: 40px 0;
+}
+
+.section-title img {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * WRAPPERS * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .header {
@@ -64,6 +97,7 @@ textarea {
 .logo {
     height: 50px;
 }
+
 .logo img {
     height: 100%;
     object-fit: contain;
@@ -81,6 +115,7 @@ textarea {
     flex-direction: column;
     text-align: right;
 }
+
 .header-delivery span {
     color: #fff;
 }
@@ -98,9 +133,11 @@ textarea {
     display: flex;
     align-items: center;
 }
+
 .header-call img {
     margin: 0 25px;
 }
+
 .header-call span,
 .header-call a {
     color: #fff;
@@ -176,6 +213,199 @@ textarea {
 .btn-header-cashback img {
     margin-right: 5px;
 }
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * HERO SLIDER * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.hero-slider {
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-slider div {
+    width: 100%;
+}
+
+.hero-slider img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.hero-slider-next {
+    position: absolute;
+    z-index: 50;
+    top: 42%;
+    right: 30px;
+    font-size: 60px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hero-slider-prev {
+    position: absolute;
+    z-index: 50;
+    top: 42%;
+    left: 30px;
+    font-size: 60px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.slick-dots {
+    bottom: 25px;
+}
+
+.slick-dots li button:before {
+    font-size: 16px;
+    color: #fff !important;
+    opacity: 0.5;
+}
+
+.slick-dots li.slick-active button:before {
+    font-size: 16px;
+    color: #fff;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * PIZZA * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.pizza {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0;justify-content: center;
+}
+.pizza-card {
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.pizza-img {
+    height: 220px;
+}
+.pizza-img img{
+    height: 100%;
+    object-fit: contain;
+}
+
+input[type=radio] {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+    border-top: solid 2px transparent;
+    border-bottom: solid 2px transparent;
+  }
+  
+  label {
+    color: #a4a39d;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 5px;
+    border-top: solid 2px #a4a39d;
+    border-bottom: solid 2px #a4a39d;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+background: #e6e6e6;
+  }
+  
+  input[type=radio]:checked + label {
+    color: #000;
+    outline: solid 2px #a4a39d;
+    border-top: solid 2px transparent;
+    border-bottom: solid 2px transparent;
+    background: #fff;
+  }
+  input[type=radio]:checked + label:not(:last-child) {
+    margin-right: 2px;
+  }
+  
+  label + input[type=radio] + label {
+    /* border-left: solid 3px #675f6b; */
+    border-top: solid 2px #a4a39d;
+    border-bottom: solid 2px #a4a39d;
+  }
+  
+  .radio-group {
+    border-left: solid 2px #a4a39d;
+    border-right: solid 2px #a4a39d;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+  
+  }
+
+  .pizza-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+  }
+  
+  .pizza-size .radio-group {
+    width: 200px;
+  }
+
+
+.pizza-pastry .radio-group {
+    width: 175px;
+    display: flex;
+}
+
+
+.pizza-pastry label {
+    width: 100%;
+}
+
+.pizza-name {
+    font-size: 16px;
+    font-weight: 800;
+    color: #000;
+}
+
+.pizza-comp {
+    font-size: 12px;
+    color: #a8a8a8;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+.pizza-info {
+    width: 200px;
+}
+
+.pizza-buy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pizza-add-to-cart {
+    font-size: 14px;
+    color: #000;
+    font-weight: 700;
+    background: #f6d530;
+    padding: 6px;
+    margin-right: 7px;
+}
+
+.pizza-price {
+    font-size: 16px;
+    color: #000;
+    font-weight: 800;
+}
+
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 1100px * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 @media screen and (max-width: 1100px) {

@@ -6,12 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Apex Pizza</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fonts.css">
 </head>
 
+<script>
+
+var ImgArray = [
+  "images/pepperoni.png",
+  "images/cezar.png",
+  "images/margarita.png",
+];
+
+function ChangeImg(imgPtr) {
+  document.getElementById('CommonImg').src = ImgArray[imgPtr];
+//  document.getElementById('CommonImg').alt = ImgArray[imgPtr]; // optional comment
+}
+
+</script>
+
 <body>
-    <div class="header">
+    <header class="header">
         <div class="header-top">
             <a href="index.html" class="logo">
                 <img src="images/logo.png" alt="">
@@ -53,9 +71,208 @@
                 <a href="" class="btn-header-cashback"><img src="images/cashback.png" alt="">Cashback</a>
             </div>
         </div>
-    </div>
+    </header>
+    <section class="hero-slider">
+        <div><img src="images/apex-banner-1.jpg" alt=""></div>
+        <div><img src="images/apex-banner-1.jpg" alt=""></div>
+        <div><img src="images/apex-banner-1.jpg" alt=""></div>
+        <div><img src="images/apex-banner-1.jpg" alt=""></div>
+    </section>
+    <section class="main-content" style="background-image: url('images/shapes-bg.png');">
+        <div class="wrapper">
+            <h2 class="section-title">
+                <img src="images/title-bg.png" alt="">
+                ПИЦЦА:
+            </h2>
+            <div class="pizza">
+                <div class="pizza-card">
+                    <div class="pizza-img">
+                        <img id="CommonImg" src="images/margarita.png"> 
+                    </div>
+
+                    <div class="pizza-details">
+                        <div class="pizza-info">
+                            <h3 class="pizza-name">Пицца маргарита</h3>
+                            <p class="pizza-comp">
+                                Состав: Сыр моцарелла, соус
+                                томатный, томаты, базилик
+                            </p>
+                        </div>
+                        <div>
+                            <div class="pizza-size">
+                                <form>
+                                    <div class="radio-group">
+                                        <input type="radio" id="margarita-35sm" name="selector" name="imgControl" value="0" onclick="ChangeImg(this.value)"> 
+                                        <label for="margarita-35sm">35см</label>
+                                        <input type="radio" id="margarita-30sm" name="selector" name="imgControl" value="1" onclick="ChangeImg(this.value)">
+                                        <label for="margarita-30sm">30см</label>
+                                        <input type="radio" id="margarita-25sm" name="selector" name="imgControl" value="2" onclick="ChangeImg(this.value)" checked>
+                                        <label for="margarita-25sm">25см</label>
+                                    </div>
+                                </form>
+                            </div>
+                           
+                            <div class="pizza-pastry">
+                                <form>
+                                    <div class="radio-group">
+                                        <input type="radio" id="margarita-thin" name="selector" value="0">
+                                        <label for="margarita-thin" >Тонкое</label>
+                                        <input type="radio" id="margarita-traditional" name="selector" checked>
+                                        <label for="margarita-traditional">Традиционное</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="pizza-buy">
+                                <button class="pizza-add-to-cart">В корзину</button>
+                                <span class="pizza-price">30 000 сум</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="pizza-card">
+                    <div class="pizza-img">
+                        <img src="images/pepperoni.png" alt="">
+                    </div>
+
+                    <div class="pizza-details">
+                        <div class="pizza-info">
+                            <h3 class="pizza-name">Пицца пепперони</h3>
+                            <p class="pizza-comp">
+                                Состав: Сыр моцарелла, Соус
+                                томатный, пикантная колбаса
+                                пепперони, рукола
+                            </p>
+                        </div>
+                        <div>
+                            <div class="pizza-size">
+                                <form>
+                                    <div class="radio-group">
+                                        <input type="radio" id="option-35sm" name="selector">
+                                        <label for="option-35sm">35см</label>
+                                        <input type="radio" id="option-30sm" name="selector">
+                                        <label for="option-30sm">30см</label>
+                                        <input type="radio" id="option-25sm" name="selector" checked>
+                                        <label for="option-25sm">25см</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="pizza-pastry">
+                                <form>
+                                    <div class="radio-group">
+                                        <input type="radio" id="option-thin" name="selector">
+                                        <label for="option-thin">Тонкое</label>
+                                        <input type="radio" id="option-traditional" name="selector" checked>
+                                        <label for="option-traditional">Традиционное</label>
+
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="pizza-buy">
+                                <button class="pizza-add-to-cart">В корзину</button>
+                                <span class="pizza-price">33 000 сум</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pizza-card">
+                    <div class="pizza-img">
+                        <img src="images/julyen.png" alt="">
+                    </div>
+
+                    <div class="pizza-details">
+                        <div class="pizza-info">
+                            <h3 class="pizza-name">Пицца Жюльен</h3>
+                            <p class="pizza-comp">
+                                Состав: Сыр моцарелла,
+                                сливочный соус жульен,
+                                куриное филе, шампиньоны
+                            </p>
+                        </div>
+                        <div>
+                            <div class="pizza-size">
+                                <form>
+                                    <div class="radio-group">
+                                        <input type="radio" id="option-35sm" name="selector">
+                                        <label for="option-35sm">35см</label>
+                                        <input type="radio" id="option-30sm" name="selector">
+                                        <label for="option-30sm">30см</label>
+                                        <input type="radio" id="option-25sm" name="selector" checked>
+                                        <label for="option-25sm">25см</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="pizza-pastry">
+                                <form>
+                                    <div class="radio-group">
+                                        <input type="radio" id="option-thin" name="selector">
+                                        <label for="option-thin">Тонкое</label>
+                                        <input type="radio" id="option-traditional" name="selector" checked>
+                                        <label for="option-traditional">Традиционное</label>
+
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="pizza-buy">
+                                <button class="pizza-add-to-cart">В корзину</button>
+                                <span class="pizza-price">35 000 сум</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pizza-card">
+                    <div class="pizza-img">
+                        <img src="images/cezar.png" alt="">
+                    </div>
+
+                    <div class="pizza-details">
+                        <div class="pizza-info">
+                            <h3 class="pizza-name">Пицца Цезарь</h3>
+                            <p class="pizza-comp">
+                                Состав: Сыр пармезан, соус
+                                "Цезарь", куриное филе,
+                                помидоры, листья салата
+                            </p>
+                        </div>
+                        <div>
+                            <div class="pizza-size">
+                                <form>
+                                    <div class="radio-group">
+                                        <input type="radio" id="option-35sm" name="selector">
+                                        <label for="option-35sm">35см</label>
+                                        <input type="radio" id="option-30sm" name="selector">
+                                        <label for="option-30sm">30см</label>
+                                        <input type="radio" id="option-25sm" name="selector" checked>
+                                        <label for="option-25sm">25см</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="pizza-pastry">
+                                <form>
+                                    <div class="radio-group">
+                                        <input type="radio" id="option-thin" name="selector">
+                                        <label for="option-thin">Тонкое</label>
+                                        <input type="radio" id="option-traditional" name="selector" checked>
+                                        <label for="option-traditional">Традиционное</label>
+
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="pizza-buy">
+                                <button class="pizza-add-to-cart">В корзину</button>
+                                <span class="pizza-price">37 000 сум</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="slick/slick.min.js"></script>
     <script src="js/script.js"></script>
+
 </body>
 
 </html>
