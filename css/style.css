@@ -38,6 +38,7 @@ textarea {
     background: none;
 }
 
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * WRAPPERS * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .wrapper {
@@ -48,7 +49,6 @@ textarea {
 }
 
 .main-content {
-    height: 3000px;
     position: relative;
     z-index: 20;
     background-color: #fff;
@@ -64,6 +64,7 @@ textarea {
     font-size: 26px;
     font-weight: 700;
     padding: 40px 0;
+    text-transform: uppercase;
 }
 
 .section-title img {
@@ -72,6 +73,16 @@ textarea {
     left: 0;
     right: 0;
     margin: auto;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * WRAPPERS * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.add-to-cart {
+    font-size: 14px;
+    color: #000;
+    font-weight: 700;
+    background: #f6d530;
+    padding: 6px;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * WRAPPERS * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -402,12 +413,7 @@ textarea {
     justify-content: center;
 }
 
-.pizza-add-to-cart {
-    font-size: 14px;
-    color: #000;
-    font-weight: 700;
-    background: #f6d530;
-    padding: 6px;
+.pizza .add-to-cart {
     margin-right: 7px;
 }
 
@@ -417,6 +423,272 @@ textarea {
     font-weight: 800;
 }
 
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 1100px * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.drinks {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    justify-content: center;
+}
+
+.drinks-card {
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.drinks-size .radio-group {
+    width: 200px;
+}
+
+.drink-photo {
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.drink-photo img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.drinks-name {
+    font-size: 16px;
+    font-weight: 500; 
+}
+
+.drinks-price {
+    font-size: 16px;
+    font-weight: 800;
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 1100px * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.snacks {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    justify-content: center;
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+}
+
+.snacks-card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.snacks-photo {
+    height: 200px;
+}
+
+.snacks-photo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.snacks-name {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.snacks-price {
+    font-size: 16px;
+    font-weight: 800;
+    margin-left: 10px;
+}
+
+.snacks-actions {
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * SAUCES * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.sauces {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    justify-content: center;
+    margin: auto;
+}
+
+.sauces-card {
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.sauces-name {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.sauces-photo {
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.sauces-photo img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.sauces-price {
+    font-size: 16px;
+    font-weight: 800;
+    margin-left: 10px;
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 1100px * * * * * * * * * * * * * * * * * * * * * * * * * */
+.sets-slider {
+    min-height: 500px;
+}
+
+.sets-slider .slick-slide:focus {
+    outline: none;
+}
+
+.sets-slider .slick-track {
+    display: flex !important;
+    align-items: center !important;
+}
+.sets-slider .slick-slide {
+    transition: all ease-in-out 1s;
+    opacity: .0;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.sets-slider .slick-slide .sets-text {
+    opacity: 0;
+}
+
+.sets-slider .slick-active {
+    opacity: .2;
+}
+
+.sets-slider .slick-current {
+    opacity: 1;
+}
+
+.sets-slider .slick-current .sets-text {
+    opacity: 1;
+}
+
+.sets-slider .slick-slide img {
+    height: 200px;
+    width: 50%;
+    object-fit: contain;
+    transition: 0.2s;
+}
+
+.sets-slider .slick-current img {
+    height: 380px;
+    width: 100%;
+}
+
+
+.sets-slider .slick-slide p {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+
+
+
+.sets-name {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.sets-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sets-slider .add-to-cart {
+    font-size: 24px;
+    padding: 5px 20px;
+}
+
+.sets-price {
+    font-size: 32px;
+    font-weight: 800;
+    margin-left: 30px;
+}
+
+.sets-slider-next {
+    position: absolute;
+    z-index: 50;
+    top: 42%;
+    right: 30px;
+    font-size: 60px;
+    color: #000;
+    cursor: pointer;
+}
+
+.sets-slider-prev {
+    position: absolute;
+    z-index: 50;
+    top: 42%;
+    left: 30px;
+    font-size: 60px;
+    color: #000;
+    cursor: pointer;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * HOME ABOUT APEX * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.home-about {
+    text-align: center;
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+    padding: 100px 0;
+}
+.home-about p {
+    font-size: 24px;
+}
+
+.home-about span {
+    color: #f6d52e;
+    font-weight: 800;
+    font-size: 34px;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 1100px * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.footer-yellow-line {
+    background: #f6d52e;
+    height: 35px;
+    width: 100%;
+}
+
+.footer {
+    background-image: url('../images/footer-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 220px;
+}
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 1100px * * * * * * * * * * * * * * * * * * * * * * * * * */
 
