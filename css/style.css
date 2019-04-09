@@ -943,6 +943,10 @@ textarea {
     font-weight: 500;
 }
 
+.footer-menu ul li a:hover {
+    color: #fff200;
+}
+
 .footer-menu ul li {
     margin: 5px 30px;
 }
