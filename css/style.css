@@ -6,7 +6,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
     font-family: 'Gilroy', sans-serif;
 }
@@ -99,9 +100,15 @@ textarea {
     width: 100%;
     padding: 0 15px;
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     height: 70px;
 }
 
@@ -111,19 +118,29 @@ textarea {
 
 .logo img {
     height: 100%;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 
 
 .header-top-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 
 .header-delivery {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: right;
 }
 
@@ -141,8 +158,12 @@ textarea {
 }
 
 .header-call {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .header-call img {
@@ -156,17 +177,25 @@ textarea {
 }
 
 .header-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 55px;
     max-width: 1200px;
     width: 100%;
     padding: 0 15px;
     margin: auto;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .header-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -181,12 +210,18 @@ textarea {
 }
 
 .header-bottom-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .header-cart {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .header-card-total span {
@@ -216,8 +251,12 @@ textarea {
     line-height: 30px;
     font-weight: 500;
     border-radius: 3px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 14px;
 }
 
@@ -231,6 +270,17 @@ textarea {
     max-width: 100%;
     position: relative;
     z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    -o-transition: opacity 1s ease;
+    transition: opacity 1s ease;
+    -webkit-transition: opacity 1s ease;
+}
+
+
+.hero-slider.slick-initialized {
+    visibility: visible;
+    opacity: 1;  
 }
 
 .hero-slider div {
@@ -239,7 +289,8 @@ textarea {
 
 .hero-slider img {
     width: 100%;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 
 .hero-slider-next {
@@ -285,17 +336,29 @@ textarea {
 /* * * * * * * * * * * * * * * * * * * * * * * * * * PIZZA * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .pizza {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 50px 0;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .pizza-card {
     width: 290px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     margin: 30px 0;
 }
@@ -306,7 +369,8 @@ textarea {
 
 .pizza-img img {
     height: 100%;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 
 .radio-group input[type=radio] {
@@ -358,6 +422,8 @@ textarea {
 .radio-group {
     border-left: solid 2px #a4a39d;
     border-right: solid 2px #a4a39d;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: auto;
     margin-top: 20px;
@@ -367,10 +433,19 @@ textarea {
 }
 
 .pizza-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     height: 100%;
 }
@@ -382,6 +457,8 @@ textarea {
 
 .pizza-pastry .radio-group {
     width: 175px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -408,9 +485,15 @@ textarea {
 }
 
 .pizza-buy {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .pizza .add-to-cart {
@@ -427,17 +510,29 @@ textarea {
 /* * * * * * * * * * * * * * * * * * * * * * * * * * DRINKS * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .drinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 50px 0;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .drinks-card {
     width: 290px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     margin: 30px 0;
 }
@@ -453,7 +548,8 @@ textarea {
 
 .drink-photo img {
     height: 100%;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 
 .drinks-name {
@@ -469,10 +565,15 @@ textarea {
 /* * * * * * * * * * * * * * * * * * * * * * * * * * SNACKS * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .snacks {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 50px 0;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     max-width: 700px;
     width: 100%;
     margin: auto;
@@ -480,9 +581,16 @@ textarea {
 
 .snacks-card {
     width: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     margin: 30px 0;
 }
@@ -494,7 +602,8 @@ textarea {
 .snacks-photo img {
     height: 100%;
     width: 100%;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 
 .snacks-name {
@@ -509,27 +618,43 @@ textarea {
 }
 
 .snacks-actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 15px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * SAUCES * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .sauces {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 50px 0;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: auto;
 }
 
 .sauces-card {
     width: 290px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     margin: 30px 0;
 }
@@ -546,7 +671,8 @@ textarea {
 
 .sauces-photo img {
     height: 100%;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 
 .sauces-price {
@@ -556,8 +682,19 @@ textarea {
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * SETS * * * * * * * * * * * * * * * * * * * * * * * * * */
+
 .sets-slider {
     min-height: 500px;
+    opacity: 0;
+    visibility: hidden;
+    -o-transition: opacity 1s ease;
+    transition: opacity 1s ease;
+    -webkit-transition: opacity 1s ease;
+}
+
+.sets-slider.slick-initialized {
+    visibility: visible;
+    opacity: 1;
 }
 
 .sets-slider .slick-slide:focus {
@@ -565,17 +702,32 @@ textarea {
 }
 
 .sets-slider .slick-track {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important;
-    align-items: center !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
 }
 
 .sets-slider .slick-slide {
+    -webkit-transition: all ease-in-out 1s;
+    -o-transition: all ease-in-out 1s;
     transition: all ease-in-out 1s;
     opacity: .0;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
 }
 
@@ -598,7 +750,10 @@ textarea {
 .sets-slider .slick-slide img {
     height: 200px;
     width: 50%;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s;
 }
 
@@ -623,9 +778,15 @@ textarea {
 }
 
 .sets-actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .sets-slider .add-to-cart {
@@ -692,17 +853,29 @@ textarea {
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 220px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 20px 0;
 }
 
 
 .footer-logo {
-    flex-basis: 10%;
+    -ms-flex-preferred-size: 10%;
+        flex-basis: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .footer-logo a {
@@ -714,20 +887,35 @@ textarea {
 }
 
 .footer .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .footer-menu {
-    flex-basis: 30%;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .footer-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     height: 160px;
 }
 
@@ -743,10 +931,18 @@ textarea {
 
 .footer-numbers {
     text-align: right;
-    flex-basis: 30%;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
 }
 
 .footer-numbers h4 {
@@ -759,8 +955,12 @@ textarea {
     font-size: 18px;
     font-weight: 500;
     color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 10px 0;
 }
 
@@ -769,8 +969,13 @@ textarea {
 }
 
 .footer-delivery {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .footer-delivery span:first-child {
@@ -786,10 +991,18 @@ textarea {
 }
 
 .footer-map-socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    flex-basis: 20%;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-left: 20px;
 }
 
@@ -805,8 +1018,12 @@ textarea {
 }
 
 .footer-socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 20px;
 }
 
@@ -823,11 +1040,11 @@ textarea {
 
 @media screen and (max-width: 1100px) {
     .header-bottom {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         height: 100px;
         padding: 15px;
     }
 }
-
-/* * * * * * * * * * * * * * * * * * * * * * * * * * WRAPPERS * * * * * * * * * * * * * * * * * * * * * * * * * */
-/* * * * * * * * * * * * * * * * * * * * * * * * * * WRAPPERS * * * * * * * * * * * * * * * * * * * * * * * * * */
