@@ -17,6 +17,7 @@ body.sticky {
     padding-top: 125px;
 
 }
+
 a {
     text-decoration: none;
 }
@@ -205,7 +206,8 @@ textarea {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-   
+
+
 }
 
 .header-menu {
@@ -239,6 +241,7 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    transition: 0.2s;
 }
 
 .header-cart {
@@ -290,10 +293,21 @@ textarea {
     -ms-flex-align: center;
     align-items: center;
     font-size: 14px;
+    transition: 0.2s;
 }
 
 .btn-header-cashback img {
     margin-right: 5px;
+    transition: 0.2s;
+}
+
+.btn-header-cashback:hover {
+    background: #fff;
+    color: #000;
+}
+
+.btn-header-cashback:hover img {
+    filter: brightness(0);
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * HEADER STICKY * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -318,6 +332,7 @@ textarea {
 .header-sticky-logo.display {
     display: block;
 }
+
 .header-sticky-logo img {
     height: 100%;
     -o-object-fit: contain;
@@ -329,6 +344,7 @@ textarea {
     margin-left: unset;
     transform: translateX(0);
 }
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * HERO SLIDER * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .hero-slider {
@@ -1113,6 +1129,17 @@ textarea {
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 1100px * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 @media screen and (max-width: 1100px) {
+    .header.sticky .header-bottom-right {
+        position: absolute;
+        z-index: 0;
+        top: 0;
+    }
+
+    .header.sticky .header-bottom {
+        height: 55px;
+        padding: 10px 15px;
+    }
+
     .header {
         padding: 0 15px;
     }
@@ -1132,6 +1159,7 @@ textarea {
 
     .header-menu ul {
         justify-content: space-between;
+        width: 100%;
     }
 
     .header-bottom-right {
@@ -1143,8 +1171,6 @@ textarea {
     .btn-header-cart {
         margin-right: 0;
     }
-
-
 
     .header-menu ul li:not(:last-child) {
         margin-right: 0;
