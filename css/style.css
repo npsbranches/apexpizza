@@ -75,7 +75,7 @@ textarea {
     margin: auto;
 }
 
-/* * * * * * * * * * * * * * * * * * * * * * * * * * WRAPPERS * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * BUTTONS * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .add-to-cart {
     font-size: 14px;
@@ -85,7 +85,7 @@ textarea {
     padding: 6px;
 }
 
-/* * * * * * * * * * * * * * * * * * * * * * * * * * WRAPPERS * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * HEADER * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .header {
     background-image: url('../images/header-bg.jpg');
@@ -424,7 +424,7 @@ textarea {
 }
 
 
-/* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 1100px * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * DRINKS * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .drinks {
     display: flex;
@@ -458,14 +458,15 @@ textarea {
 
 .drinks-name {
     font-size: 16px;
-    font-weight: 500; 
+    font-weight: 500;
 }
 
 .drinks-price {
     font-size: 16px;
     font-weight: 800;
 }
-/* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 1100px * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * SNACKS * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .snacks {
     display: flex;
@@ -553,7 +554,8 @@ textarea {
     font-weight: 800;
     margin-left: 10px;
 }
-/* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 1100px * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * SETS * * * * * * * * * * * * * * * * * * * * * * * * * */
 .sets-slider {
     min-height: 500px;
 }
@@ -566,6 +568,7 @@ textarea {
     display: flex !important;
     align-items: center !important;
 }
+
 .sets-slider .slick-slide {
     transition: all ease-in-out 1s;
     opacity: .0;
@@ -665,6 +668,7 @@ textarea {
     margin: auto;
     padding: 100px 0;
 }
+
 .home-about p {
     font-size: 24px;
 }
@@ -675,7 +679,7 @@ textarea {
     font-size: 34px;
 }
 
-/* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 1100px * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * FOOTER * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .footer-yellow-line {
     background: #f6d52e;
@@ -688,6 +692,131 @@ textarea {
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 220px;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+
+.footer-logo {
+    flex-basis: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-logo a {
+    width: 200px;
+}
+
+.footer-logo a img {
+    width: 100%;
+}
+
+.footer .wrapper {
+    display: flex;
+}
+
+.footer-menu {
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-menu ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 160px;
+}
+
+.footer-menu ul li a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer-menu ul li {
+    margin: 5px 30px;
+}
+
+.footer-numbers {
+    text-align: right;
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer-numbers h4 {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 800;
+}
+
+.footer-phone {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.footer-phone img {
+    margin-right: 15px;
+}
+
+.footer-delivery {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-delivery span:first-child {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.footer-delivery span:nth-child(2) {
+    font-size: 12px;
+    color: #a1a1a1;
+    font-weight: 500;
+}
+
+.footer-map-socials {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20%;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.footer-map {
+    width: 200px;
+    height: 150px;
+}
+
+.footer-map iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.footer-socials a {
+    margin: 0 10px;
+}
+
+.footer-socials a i {
+    color: #989a9a;
+    font-size: 24px;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 1100px * * * * * * * * * * * * * * * * * * * * * * * * * */
