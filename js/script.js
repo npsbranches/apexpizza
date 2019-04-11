@@ -49,3 +49,13 @@ $(window).scroll(function () {
         logo.removeClass('display');
     }
 })
+
+$(".header-menu ul").on("click", "a", function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href');
+    var top = $(id).offset().top;
+
+    $('body,html').animate({
+        scrollTop: top
+    }, 1500);
+});

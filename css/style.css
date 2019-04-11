@@ -136,8 +136,6 @@ textarea {
     object-fit: contain;
 }
 
-
-
 .header-top-right {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -146,7 +144,6 @@ textarea {
     -ms-flex-align: center;
     align-items: center;
 }
-
 
 .header-delivery {
     display: -webkit-box;
@@ -206,8 +203,6 @@ textarea {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-
-
 }
 
 .header-menu {
@@ -227,7 +222,6 @@ textarea {
     font-size: 14px;
     font-weight: 500;
 }
-
 
 .header-menu ul li a:hover {
     color: #fff200;
@@ -311,7 +305,6 @@ textarea {
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * HEADER STICKY * * * * * * * * * * * * * * * * * * * * * * * * * */
-
 
 .header.sticky {
     position: fixed;
