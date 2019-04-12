@@ -107,7 +107,9 @@ textarea {
     background-size: cover;
     background-position: center center;
     background-color: #393738;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.26);
 }
+
 
 .header-top {
     max-width: 1200px;
@@ -228,7 +230,7 @@ textarea {
 }
 
 .header-menu ul li:not(:last-child) {
-    margin-right: 35px;
+    margin-right: 20px;
 }
 
 .header-bottom-right {
@@ -236,6 +238,7 @@ textarea {
     display: -ms-flexbox;
     display: flex;
     transition: 0.2s;
+    align-items: center;
 }
 
 .header-cart {
@@ -253,6 +256,69 @@ textarea {
     font-size: 14px;
 }
 
+.header-cart-sum span {
+    font-size: 12px;
+    color: #a1a1a1;
+}
+
+.header-cart {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    
+    height: 55px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header-cart.width {
+    width: 220px;
+}
+.header-cart-products {
+    background: #fff;
+    position: absolute;
+    z-index: 2000;
+    top: 100%;
+    padding: 15px;
+    width: 100%;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.1s;
+}
+
+.header-cart-products.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.header-cart-number {
+    margin-top: -3px;
+    position: relative;
+    padding-right: 18px;
+}
+
+.header-cart-toggler {
+    position: absolute;
+    right: 0;
+    top: 3px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.header-cart-toggler.rotate {
+    transform: rotate(180deg);
+}
+
 .btn-header-cart {
     background: #f6d52e;
     color: #fff;
@@ -262,7 +328,6 @@ textarea {
     font-weight: 500;
     border-radius: 3px;
     margin-left: 15px;
-    margin-right: 20px;
     font-size: 14px;
     transition: 0.2s;
 }
@@ -350,7 +415,6 @@ textarea {
     transition: opacity 1s ease;
     -webkit-transition: opacity 1s ease;
 }
-
 
 .hero-slider.slick-initialized {
     visibility: visible;

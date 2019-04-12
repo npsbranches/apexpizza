@@ -59,3 +59,41 @@ $(".header-menu ul").on("click", "a", function (event) {
         scrollTop: top
     }, 1500);
 });
+
+
+$('.amount-remove').on('click', function(e) {
+    e.preventDefault();
+    var $this = $(this);
+    var $input = $this.closest('div').find('input');
+    var value = parseInt($input.val());
+
+    if (value > 1) {
+        value = value - 1;
+    } else {
+        value = 0;
+    }
+
+$input.val(value);
+
+});
+
+$('.amount-add').on('click', function(e) {
+    e.preventDefault();
+    var $this = $(this);
+    var $input = $this.closest('div').find('input');
+    var value = parseInt($input.val());
+
+    if (value < 100) {
+      value = value + 1;
+    } else {
+        value =100;
+    }
+
+    $input.val(value);
+});
+
+$('.header-cart-toggler').click(function(){
+    $(this).toggleClass('rotate');
+    $('.header-cart-products').toggleClass('visible');
+    $('.header-cart').toggleClass('width');
+})
