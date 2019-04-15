@@ -101,4 +101,5 @@ $('.header-cart-toggler').click(function(){
 $('.header-toggler').click(function() {
     $(this).toggleClass('active');
     $('.header-mobile-menu').toggleClass('visible');
+    $('body').toggleClass('overflow');
 });

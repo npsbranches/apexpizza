@@ -1274,6 +1274,11 @@ textarea {
     z-index: 9999;
     }
 
+
+    body.overflow {
+        overflow: hidden;
+        height: 100vh;
+    }
     .header-mobile-menu {
         opacity: 0;
         visibility: hidden;
