@@ -97,3 +97,8 @@ $('.header-cart-toggler').click(function(){
     $('.header-cart-products').toggleClass('visible');
     $('.header-cart').toggleClass('width');
 })
+
+$('.header-toggler').click(function() {
+    $(this).toggleClass('active');
+    $('.header-mobile-menu').toggleClass('visible');
+});
