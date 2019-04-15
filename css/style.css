@@ -13,10 +13,7 @@
     font-family: 'Gilroy', sans-serif;
 }
 
-body.sticky {
-    padding-top: 125px;
 
-}
 
 a {
     text-decoration: none;
@@ -107,7 +104,7 @@ textarea {
     background-size: cover;
     background-position: center center;
     background-color: #393738;
-    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.26);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.26);
 }
 
 
@@ -270,7 +267,7 @@ textarea {
     -ms-flex-align: center;
     align-items: center;
     position: relative;
-    
+
     height: 55px;
     margin-right: 20px;
     display: flex;
@@ -281,6 +278,7 @@ textarea {
 .header-cart.width {
     width: 220px;
 }
+
 .header-cart-products {
     background: #fff;
     position: absolute;
@@ -290,10 +288,61 @@ textarea {
     width: 100%;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    box-shadow: 0 0 2px 2px rgba(0,0,0,0.1);
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
     opacity: 0;
     visibility: hidden;
     transition: 0.1s;
+}
+
+.header-cart-products h5 {
+    font-size: 16px;
+}
+
+.header-cart-product:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.header-cart-product {
+    position: relative;
+}
+
+.header-cart-product span {
+    color: #a1a1a1;
+    font-size: 14px;
+}
+
+.header-cart-product-remove {
+    position: absolute;
+    right: 0;
+    color: #a1a1a1;
+}
+
+.header-cart-product input {
+    width: 30px;
+    text-align: center;
+    color: #a4a39d;
+}
+
+.amount-controllers {
+    display: flex;
+    margin-top: 10px;
+}
+
+.amount-remove,
+.amount-add {
+    border: 1px solid #a4a39d;
+    padding: 5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 2px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.amount-remove i,
+.amount-add i {
+    color: #a4a39d;
 }
 
 .header-cart-products.visible {
@@ -332,6 +381,7 @@ textarea {
     transition: 0.2s;
 }
 
+
 .btn-header-cart:hover {
     background: #fff;
     color: #000;
@@ -369,39 +419,17 @@ textarea {
     filter: brightness(0);
 }
 
-/* * * * * * * * * * * * * * * * * * * * * * * * * * HEADER STICKY * * * * * * * * * * * * * * * * * * * * * * * * * */
-
-.header.sticky {
-    position: fixed;
-    top: -70px;
-    left: 0;
-    width: 100%;
-    z-index: 200;
+.header-cart-products-sum {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+    padding-top: 10px;
 }
 
-.header-sticky-logo {
-    height: 35px;
-    transform: translateX(-100%);
-    margin-left: -30px;
-    transition: 0.2s;
-    display: none;
+.header-cart-products-sum span {
+    font-size: 14px;
 }
 
-.header-sticky-logo.display {
-    display: block;
-}
-
-.header-sticky-logo img {
-    height: 100%;
-    -o-object-fit: contain;
-    object-fit: contain;
-}
-
-.header.sticky .header-sticky-logo {
-    margin-right: 30px;
-    margin-left: unset;
-    transform: translateX(0);
-}
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * HERO SLIDER * * * * * * * * * * * * * * * * * * * * * * * * * */
 
@@ -1183,9 +1211,69 @@ textarea {
     color: #fff;
 }
 
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * HEADER STICKY * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@media screen and (min-width: 1100px) {
+    body.sticky {
+        padding-top: 125px;
+    
+    }
+    .header.sticky {
+        position: fixed;
+        top: -70px;
+        left: 0;
+        width: 100%;
+        z-index: 200;
+    }
+    
+    .header-sticky-logo {
+        height: 35px;
+        transform: translateX(-100%);
+        margin-left: -30px;
+        transition: 0.2s;
+        display: none;
+    }
+    
+    .header-sticky-logo.display {
+        display: block;
+    }
+    
+    .header-sticky-logo img {
+        height: 100%;
+        -o-object-fit: contain;
+        object-fit: contain;
+    }
+    
+    .header.sticky .header-sticky-logo {
+        margin-right: 20px;
+        margin-left: unset;
+        transform: translateX(0);
+    }
+}
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA MAX 1100px * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 @media screen and (max-width: 1100px) {
+    .header-top {
+        display: none;
+    }
+
+    .header-menu {
+        display: none;
+    }
+
+    .header-bottom-right {
+        display: none;
+    }
+    /* .header-bottom {
+        display: none;
+    }
+
+    .header-top-right {
+        display: none;
+    } */
+
+    /*
     .header.sticky .header-bottom-right {
         position: absolute;
         z-index: 0;
@@ -1231,5 +1319,5 @@ textarea {
 
     .header-menu ul li:not(:last-child) {
         margin-right: 0;
-    }
+    }*/
 }
