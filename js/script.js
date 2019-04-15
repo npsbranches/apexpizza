@@ -103,3 +103,21 @@ $('.header-toggler').click(function() {
     $('.header-mobile-menu').toggleClass('visible');
     $('body').toggleClass('overflow');
 });
+
+$('.header-mobile-menu ul li a').click(function() {
+    $('.header-toggler').toggleClass('active');
+    $('.header-mobile-menu').toggleClass('visible');
+    $('body').toggleClass('overflow');
+});
+
+
+
+$(".header-mobile-menu ul").on("click", "a", function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href');
+    var top = $(id).offset().top;
+
+    $('body,html').animate({
+        scrollTop: top
+    }, 1500);
+});
