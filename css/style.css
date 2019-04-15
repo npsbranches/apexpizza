@@ -1498,6 +1498,13 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
     .sets-slider .slick-slide .sets-text {
         opacity: 1;
     }
+    .home-about p {
+        font-size: 18px;
+    }
+
+    .home-about span {
+        font-size: 18px;
+    }
 }
 @media screen and (max-width: 576px) {
     .hero-slider {
