@@ -1521,4 +1521,11 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
     
     }
     
+    .sets-price {
+        font-size: 16px;
+    }
+
+    .sets-slider .add-to-cart {
+        font-size: 16px;
+    }
 }
