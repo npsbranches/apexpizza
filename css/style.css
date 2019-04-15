@@ -1447,3 +1447,13 @@ textarea {
         margin-right: 0;
     }*/
 }
+
+@media screen and (max-width: 576px) {
+    .hero-slider {
+        display: none;
+    }
+
+    .main-content .wrapper {
+        padding-top: 50px;
+    }
+}
