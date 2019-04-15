@@ -1265,6 +1265,10 @@ textarea {
     .header-bottom-right {
         display: none;
     }
+
+    .footer .wrapper {
+        flex-direction: column;
+    }
     /* .header-bottom {
         display: none;
     }
