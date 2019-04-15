@@ -20,7 +20,7 @@ $('.sets-slider').slick({
     // autoplay: true,
     // autoplaySpeed: 2000,
     responsive: [{
-        breakpoint: 576,
+        breakpoint: 768,
         settings: {
             slidesToShow: 1,
         }
