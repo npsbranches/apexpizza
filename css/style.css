@@ -431,6 +431,32 @@ textarea {
 }
 
 
+.header-mobile {
+    display: none;
+}
+
+.header-mobile-cart {
+    position: fixed;
+    z-index: 9999;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    display: flex;
+    margin: auto;
+    background: #f6d52e;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+}
+
+.header-mobile-cart i{
+    color: #fff;
+}
 /* * * * * * * * * * * * * * * * * * * * * * * * * * HERO SLIDER * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .hero-slider {
@@ -1267,6 +1293,7 @@ textarea {
     .header-mobile {
         background: url('../images/header-bg.jpg') no-repeat;
         background-size: cover;
+        display: block;
     }
 
     .header-panel {
