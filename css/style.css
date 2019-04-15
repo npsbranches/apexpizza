@@ -457,6 +457,21 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
 .header-mobile-cart i{
     color: #fff;
 }
+
+.header-mobile-cart-number {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #fff;
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 12px;
+    border: 1px solid #f6d52e;
+}
 /* * * * * * * * * * * * * * * * * * * * * * * * * * HERO SLIDER * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .hero-slider {
@@ -1419,6 +1434,9 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
 
     .footer-menu {
         flex-basis: 35%;
+    }
+    .header-mobile-cart-number {
+        position: absolute;
     }
 }
 
