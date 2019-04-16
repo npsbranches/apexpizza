@@ -13,8 +13,6 @@
     font-family: 'Gilroy', sans-serif;
 }
 
-
-
 a {
     text-decoration: none;
 }
@@ -41,7 +39,6 @@ textarea {
     outline: none;
     background: none;
 }
-
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * WRAPPERS * * * * * * * * * * * * * * * * * * * * * * * * * */
 
@@ -106,7 +103,6 @@ textarea {
     background-color: #393738;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.26);
 }
-
 
 .header-top {
     max-width: 1200px;
@@ -540,6 +536,11 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
 }
 
 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * HERO MOBILE * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.hero-mobile img {
+    width: 100%;
+}
 /* * * * * * * * * * * * * * * * * * * * * * * * * * PIZZA * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .pizza {
