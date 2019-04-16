@@ -538,6 +538,9 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * HERO MOBILE * * * * * * * * * * * * * * * * * * * * * * * * * */
 
+.hero-mobile {
+    display: none;
+}
 .hero-mobile img {
     width: 100%;
 }
@@ -1459,6 +1462,11 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
     }
 }
 @media screen and (max-width: 800px) {
+    .footer {
+        background-image: url('../images/backgrounds/footer-planshet-bg.png');
+        background-color: #313030;
+
+    }
     .footer-menu {
         flex-basis: 100%;
         margin-bottom: 50px;
@@ -1510,6 +1518,10 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
 @media screen and (max-width: 576px) {
     .hero-slider {
         display: none;
+    }
+
+    .hero-mobile {
+        display: block;
     }
 
     .main-content .wrapper {
