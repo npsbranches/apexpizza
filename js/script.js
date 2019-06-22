@@ -28,7 +28,7 @@ $('.sets-slider').slick({
 })
 
 
-$('.pizza-comp-option').click(function() {
+$('.pizza-comp-option').click(function () {
     $(this).toggleClass('delete');
 });
 
@@ -123,4 +123,57 @@ $(".header-mobile-menu ul").on("click", "a", function (event) {
     $('body,html').animate({
         scrollTop: top
     }, 1500);
+});
+
+// This button will increment the value
+$('.qtyplus').click(function (e) {
+    // Stop acting like a button
+    e.preventDefault();
+    // Get the field name
+    fieldName = $(this).attr('field');
+    // Get its current value
+    var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+    // If is not undefined
+    if (!isNaN(currentVal)) {
+        // Increment
+        $('input[name=' + fieldName + ']').val(currentVal + 1);
+    } else {
+        // Otherwise put a 0 there
+        $('input[name=' + fieldName + ']').val(0);
+    }
+});
+// This button will decrement the value till 0
+$(".qtyminus").click(function (e) {
+    // Stop acting like a button
+    e.preventDefault();
+    // Get the field name
+    fieldName = $(this).attr('field');
+    // Get its current value
+    var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+    // If it isn't undefined or its greater than 0
+    if (!isNaN(currentVal) && currentVal > 0) {
+        // Decrement one
+        $('input[name=' + fieldName + ']').val(currentVal - 1);
+    } else {
+        // Otherwise put a 0 there
+        $('input[name=' + fieldName + ']').val(0);
+    }
+});
+
+$('.cart-rec').owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: true,
+    dots: false,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 3
+        }
+    }
 });

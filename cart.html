@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="shortcut icon" href="images/favapex.ico" type="image/x-icon">
@@ -64,7 +66,7 @@
                             </span>
                         </div>
                     </div>
-                    <a href="" class="btn-header-cart">Корзина</a>
+                    <a href="cart.html" class="btn-header-cart">Корзина</a>
                     <div class="header-cart-products">
                         <div class="header-cart-product">
                             <button type="button" class="header-cart-product-remove">
@@ -170,6 +172,198 @@
                     <button type="submit">Применить</button>
                 </form>
             </div>
+            <div class="wrapper">
+                <div class="cart-card">
+                    <div class="cart-card-name">
+                        <h4>Пицца пепперони</h4>
+                    </div>
+                    <div class="cart-card-actions">
+                        <div class="cart-card-quantities">
+                            <form id='myform' method='POST' action='#'>
+                                <input type='button' value='-' class='qtyminus' field='quantity' />
+                                <input type='text' name='quantity' value='0' class='qty' />
+                                <input type='button' value='+' class='qtyplus' field='quantity' />
+                            </form>
+                        </div>
+
+                        <div class="cart-card-price">
+                            33 000 сум
+                        </div>
+                        <button class="cart-card-delete-btn"><i class="fa fa-close"></i></button>
+
+                    </div>
+                </div>
+                <div class="cart-card">
+                    <div class="cart-card-name">
+                        <h4>Пицца Цезарь</h4>
+                    </div>
+                    <div class="cart-card-actions">
+                        <div class="cart-card-quantities">
+                            <form id='myform' method='POST' action='#'>
+                                <input type='button' value='-' class='qtyminus' field='quantity' />
+                                <input type='text' name='quantity' value='0' class='qty' />
+                                <input type='button' value='+' class='qtyplus' field='quantity' />
+                            </form>
+                        </div>
+                        <div class="cart-card-price">
+                            37 000 сум
+                        </div>
+                        <button class="cart-card-delete-btn"><i class="fa fa-close"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <h2 class="section-title-no-bg">
+                    Подарки новому клиенту
+                </h2>
+                <div class="cart-card">
+                    <div class="cart-card-name">
+                        <h4>Книга для нового клиента</h4>
+                    </div>
+                    <div class="cart-card-actions">
+                        <div class="cart-card-quantities">
+                            <form id='myform' method='POST' action='#'>
+                                <input type='button' value='-' class='qtyminus' field='quantity' />
+                                <input type='text' name='quantity' value='0' class='qty' />
+                                <input type='button' value='+' class='qtyplus' field='quantity' />
+                            </form>
+                        </div>
+                        <div class="cart-card-price">
+                            17 000 сум
+                        </div>
+                        <button class="cart-card-delete-btn"><i class="fa fa-close"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="cart-rec owl-theme owl-carousel">
+                    <div class="cart-rec-card">
+                        <div class="cart-rec-card-photo">
+                            <img src="images/drinks/fanta.png" alt="">
+                        </div>
+                        <div class="cart-rec-card-actions">
+                            <div>
+                                <div class="cart-rec-card-name">Fanta 0.5 л</div>
+                                <div class="cart-rec-card-price">4 000 сум</div>
+                            </div>
+                            <button class="add-to-cart">
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cart-rec-card">
+                        <div class="cart-rec-card-photo">
+                            <img src="images/drinks/fanta.png" alt="">
+                        </div>
+                        <div class="cart-rec-card-actions">
+                            <div>
+                                <div class="cart-rec-card-name">Fanta 0.5 л</div>
+                                <div class="cart-rec-card-price">4 000 сум</div>
+                            </div>
+                            <button class="add-to-cart">
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cart-rec-card">
+                        <div class="cart-rec-card-photo">
+                            <img src="images/drinks/fanta.png" alt="">
+                        </div>
+                        <div class="cart-rec-card-actions">
+                            <div>
+                                <div class="cart-rec-card-name">Fanta 0.5 л</div>
+                                <div class="cart-rec-card-price">4 000 сум</div>
+                            </div>
+                            <button class="add-to-cart">
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cart-rec-card">
+                        <div class="cart-rec-card-photo">
+                            <img src="images/drinks/fanta.png" alt="">
+                        </div>
+                        <div class="cart-rec-card-actions">
+                            <div>
+                                <div class="cart-rec-card-name">Fanta 0.5 л</div>
+                                <div class="cart-rec-card-price">4 000 сум</div>
+                            </div>
+                            <button class="add-to-cart">
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <span class="cart-rec-span">
+                    Мы используем cookies для быстрой и удобной работы сайта. Продолжая пользоваться сайтом, вы
+                    принимаете условия обработки персональных данных
+                </span>
+            </div>
+            <div class="wrapper">
+                <div class="sauces cart-sauces">
+                    <div class="sauces-card">
+                        <div class="sauces-photo">
+                            <img src="images/sauces/salsa.png" alt="">
+                        </div>
+                        <h3 class="sauces-name">
+                            Соус Сальса
+                        </h3>
+                        <div class="sauces-actions">
+                            <button class="add-to-cart">В корзину</button>
+                            <span class="sauces-price">2 000 сум</span>
+                        </div>
+                    </div>
+                    <div class="sauces-card">
+                        <div class="sauces-photo">
+                            <img src="images/sauces/teriyaki.png" alt="">
+                        </div>
+                        <h3 class="sauces-name">
+                            Соус Терияки
+                        </h3>
+                        <div class="sauces-actions">
+                            <button class="add-to-cart">В корзину</button>
+                            <span class="sauces-price">2 000 сум</span>
+                        </div>
+                    </div>
+                    <div class="sauces-card">
+                        <div class="sauces-photo">
+                            <img src="images/sauces/mayonnaise-provencal.png" alt="">
+                        </div>
+                        <h3 class="sauces-name">
+                            Майонез Провансаль
+                        </h3>
+                        <div class="sauces-actions">
+                            <button class="add-to-cart">В корзину</button>
+                            <span class="sauces-price">2 000 сум</span>
+                        </div>
+                    </div>
+                    <div class="sauces-card">
+                        <div class="sauces-photo">
+                            <img src="images/sauces/tomato-ketchup.png" alt="">
+                        </div>
+                        <h3 class="sauces-name">
+                            Томатный Кетчуп
+                        </h3>
+                        <div class="sauces-actions">
+                            <button class="add-to-cart">В корзину</button>
+                            <span class="sauces-price">2 000 сум</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-page-total">
+                <div class="wrapper">
+                    <span>Сумма заказа:</span>
+                    <span>87 000 сум</span>
+                </div>
+            </div>
+            <div class="wrapper">
+
+                <div class="cart-btns">
+                    <a href="index.html" class="cart-back-btn">Вернуться на главную</a>
+                    <a href="" class="cart-submit-btn add-to-cart">Заказать</a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -222,6 +416,7 @@
 
     </footer>
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="slick/slick.min.js"></script>
     <script src="js/script.js"></script>
 
