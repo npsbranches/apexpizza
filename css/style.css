@@ -2004,6 +2004,37 @@ iframe {
     width: 100%;
 }
 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * CART CHECKOUT INPUTS * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.checkout input {
+    padding: 0 15px;
+    border: 1px solid #cecece;
+    border-radius: 50px;
+    width: 100%;
+    font-weight: 500;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.checkout div {
+    display: flex;
+}
+
+.checkout div input {
+    width: 50%;
+}
+
+.checkout div input:first-child {
+    margin-right: 20px;
+}
+
+
+.checkout form {
+    margin: auto;
+    max-width: 600px;
+    width: 100%;
+}
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * HEADER STICKY * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 @media screen and (min-width: 1100px) {
@@ -2336,7 +2367,7 @@ iframe {
         width: 80%;
         margin-bottom: 20px;
     }
-    
+
     .contacts-card-right {
         flex-basis: 100%;
         width: 80%;
@@ -2412,7 +2443,16 @@ iframe {
     .cart-card-price {
         margin: 20px 0;
     }
+
     .contacts {
         padding: 0;
+    }
+
+    .checkout form div {
+        flex-direction: column;
+    }
+
+    .checkout div input {
+        width: 100%;
     }
 }
