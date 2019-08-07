@@ -110,6 +110,9 @@ $('.btn-header-cashback').click(function () {
 $('.header-mobile-cashback').click(function () {
     $('.header-mobile-cashback-info').toggleClass('visible');
 })
+$('.hmc-close').click(function () {
+    $('.header-mobile-cashback-info').toggleClass('visible');
+})
 
 $('.header-toggler').click(function () {
     $(this).toggleClass('active');
